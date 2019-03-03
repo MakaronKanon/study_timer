@@ -13,7 +13,8 @@ class Countdown extends StatelessWidget {
     return Stack(children: <Widget>[
       CountdownCircle(),
       CountdownText(),
-    ]);
+    ],
+    alignment: Alignment.center,);
   }
 
 }
