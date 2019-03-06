@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:study_timer/ui/countdown.dart';
+import 'package:study_timer/ui/countdown_indicator.dart';
 
 class Home extends StatelessWidget
 {
@@ -13,7 +13,8 @@ class Home extends StatelessWidget
   {
     return Column(
       children: <Widget>[
-        Countdown(),
+        Padding(padding: EdgeInsets.only(top:30),),
+        CountdownIndicator(timeLeft:Duration(seconds: 15), percentage: 0.3),
         Row(
           children: <Widget>[
             IconButton(icon: Icon(Icons.radio_button_unchecked),),
